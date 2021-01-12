@@ -1,0 +1,28 @@
+body {
+  height: 3000px;
+}
+
+.block {
+  width: 400px;
+  height: 700px;
+  background-color: greenyellow;
+  background-image: url('../images/phone.png'), url('../images/house.png'),
+    url('../images/maxresdefault.jpg');
+  background-repeat: no-repeat;
+  background-size: 20%, 40%, 100% 100%;
+  background-position: center top, center, center;
+}
+
+.box {
+  width: 1000px;
+  height: 200px;
+  margin: 500px auto;
+  border: 1px solid black;
+  background-image: url('../images/cat.jpg');
+  background-repeat: no-repeat;
+  background-color: yellow;
+  background-position: center;
+  padding: 20px;
+  background-size: cover;
+  background-attachment: fixed;
+}

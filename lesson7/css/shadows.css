@@ -1,0 +1,47 @@
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  background-color: grey;
+  border: 1px solid black;
+  box-shadow: inset 0px 0px 15px 0px yellow, 10px 10px 0px 5px red,
+    15px 15px 0px 5px green, 25px 25px 0px 5px pink;
+}
+
+h1 {
+  font-size: 100px;
+  text-shadow: 2px 2px 0px red;
+}
+
+.caption {
+  font-size: 30px;
+  font-family: Tahoma;
+  text-align: center;
+}
+
+.caption::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 4px;
+  vertical-align: middle;
+  margin-right: 5px;
+  background-color: black;
+}
+
+.caption::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 30px;
+  height: 4px;
+  background-color: orange;
+  max-width: 300px;
+  transition: 1s;
+}
+
+.caption:hover::after {
+  width: 100%;
+  max-width: 300px;
+}

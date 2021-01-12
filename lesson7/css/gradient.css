@@ -1,0 +1,14 @@
+.box {
+  width: 800px;
+  height: 200px;
+  border: 1px solid #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/cat.jpg');
+}
+
+.block {
+  width: 800px;
+  height: 200px;
+  border: 1px solid #000;
+  background-image: radial-gradient(circle at left bottom, red, green);
+}
