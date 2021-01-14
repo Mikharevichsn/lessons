@@ -1,0 +1,13 @@
+.icon {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('./Vector.svg');
+}
+
+.twitter-icon {
+  width: 20px;
+  height: 18px;
+}
