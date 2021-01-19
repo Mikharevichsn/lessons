@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  /* opacity: 0.8; */
+}
+
+body {
+  height: 3000px;
+}
+
+.parent {
+  width: 800px;
+  height: 600px;
+  background-color: pink;
+  margin: 50px auto;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.parent:hover .box {
+  left: 0;
+}
+
+.item {
+  width: 100px;
+  height: 70px;
+  background-color: black;
+}
+
+.box {
+  height: 170px;
+  width: 200px;
+  background-color: tomato;
+  position: relative;
+  left: -210px;
+  transition: 1s;
+}
+
+.child {
+  width: 300px;
+  height: 270px;
+  background-color: chartreuse;
+}
+
+/* .info {
+  width: 250px;
+  height: 200px;
+  background-color: darkcyan;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+} */

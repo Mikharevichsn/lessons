@@ -1,0 +1,28 @@
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.overlay.is-open {
+  display: block;
+}
+
+.overlay.is-open .modal {
+  position: fixed;
+  display: block;
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  min-width: 400px;
+  min-height: 200px;
+  transform: translate(-50%, -50%);
+}
+
+.overlay .modal {
+  display: none;
+}
