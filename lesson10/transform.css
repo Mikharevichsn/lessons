@@ -1,0 +1,41 @@
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.translate-box {
+  background-color: aqua;
+  transform: translate(0, 0);
+  /* transform: translateX(30px); */
+  /* transform: translateY(30px); */
+  /* transform: translateY(30px) translateX(30px); */
+}
+
+.rotate-box {
+  background-color: blueviolet;
+  transform: rotate(0deg);
+  /* transform: rotateY(0deg); */
+  /* transform: rotateX(0deg); */
+  /* transform: rotateZ(0deg); */
+  /* transform-origin: left top; */
+}
+
+.scale-box {
+  background-color: darkorange;
+  transform: scale(1);
+}
+
+.skew-box {
+  background-color: greenyellow;
+  transform: skew(0deg, 0deg);
+}
