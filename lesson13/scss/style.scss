@@ -1,0 +1,16 @@
+@import './mixin';
+@import './header';
+
+body {
+  background-color: aquamarine;
+
+  .box {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+
+    p {
+      color: $color;
+    }
+  }
+}
