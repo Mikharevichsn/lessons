@@ -1,0 +1,19 @@
+input:required {
+  background-color: greenyellow;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:required + label::after {
+  content: '*';
+}
