@@ -1,0 +1,165 @@
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* width: 100%;
+  height: 500px;
+  background-color: aqua; */
+}
+
+/* MIN-WIDTH */
+
+/* если ширина от 320 до бесконечность -> применить стили */
+/* @media (min-width: 320px) {
+  body {
+    background-color: pink;
+  }
+} */
+
+/* если ширина от 768 до бесконечность -> применить стили */
+/* @media (min-width: 768px) {
+  body {
+    background-color: yellow;
+  }
+} */
+
+/* если ширина от 1200 до бесконечность -> применить стили */
+/* @media (min-width: 1200px) {
+  body {
+    background-color: purple;
+  }
+} */
+
+/* MAX-WIDTH */
+/* от 0 до 1400 */
+/* @media (max-width: 1400px) {
+  body {
+    background-color: orange;
+  }
+} */
+
+/* от 0 до 1200 */
+/* @media (max-width: 1200px) {
+  body {
+    background-color: greenyellow;
+  }
+} */
+
+/* от 0 до 768 */
+/* @media (max-width: 768px) {
+  body {
+    background-color: grey;
+  }
+} */
+
+/* от 0 до 320 */
+/* @media (max-width: 320px) {
+  body {
+    background-color: cornflowerblue;
+  }
+} */
+
+/* AND */
+/* диапазон от 320 до 768 */
+/* @media (min-width: 320px) and (max-width: 768px) {
+  body {
+    background-color: crimson;
+  }
+} */
+
+/* TYPES */
+/* all */
+/* screen  */
+/* print  */
+
+/* @media screen and (min-width: 320px) {
+  body {
+    background-color: red;
+  }
+} */
+
+/* @media print {
+  .navigation {
+    display: none;
+  }
+  .modal-btn {
+    display: none;
+  }
+} */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  outline: 1px solid darkmagenta;
+  padding: 0 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  background: #f5f4fa;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .card {
+    width: 450px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .card {
+    width: 354px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .card {
+    width: 270px;
+    height: 120px;
+  }
+
+  .card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
